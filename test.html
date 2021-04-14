@@ -1,0 +1,37 @@
+<html>
+
+<style>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src="js.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<body>
+	
+	<form name="myForm">
+	學校：
+	<select id = "FirstSelect" onChange="FirstChange(this.value);">
+	</select>
+
+	班級：
+	<select id = "SecondSelect" onChange="SecondChange(this.value);">
+	</select>
+	</form>
+	
+	
+	<div class="results" id="results">
+        <!-- data will be inserted here-->
+    </div>
+	
+	<br><br><br><br><br>
+	
+	<div class="graph" id="graph">
+        <!-- data will be inserted here-->
+    </div>
+	
+</body>
+
+</html>

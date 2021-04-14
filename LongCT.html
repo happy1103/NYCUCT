@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>NYCU CT GAME</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="longCT.css" />
+	<!-- <script src="timeline.js"></script>-->
+	<script src="login.js"></script>
+	<script src="longCT.js"></script>
+	<!-- // Fonts -->
+</head>
+<body>
+	<br><br><h1 style="text-align:center">NYCU CT遊戲玩起來</h1>
+	<h3 style = "text-align:center;">使用遊戲訓練運算思維</h3>
+	<div id = "Imworking" class = "Imworking"><img src = "working.jpg" width="600px"></img></div>
+	
+	<div id = "login"><button class = "loginbutton" >Login</button></div>
+	<div id = "logout" style = "display: none;"><button class = "logoutbutton" >Logout</button></div>
+	<div id = "loginbox" style = "display: none;" class = "loginbox">
+		<button class = "X" id = "X">X</button>
+		<p>帳號：</p>
+		<input type="text" id="account"><br><br>
+		<p>密碼：</p>
+		<input type="text" id="password"><br>
+		<p style = 'color: white;' id = 'worning'>帳號密碼錯誤</p>
+		<button class = "loginboxbutton" id = "loginboxbutton">登入</button>
+	</div>
+	
+	<div id = "forteacher" style = "display: none;"><button class = "forteacher" >三</button></div>
+	<div id = "teacheruse" style = "display: none;" class = "teacheruse">
+	
+		<a href = "https://drive.google.com/file/d/1ZAaguHe8zHeEPqV96KlrDdqNLr5P8wgZ/view?usp=sharing"  target="_blank">流程</a><br>
+		<a download="同意書.pdf" href = "agree.pdf">同意書</a><br>
+		<a href = "https://drive.google.com/file/d/1c1gUBGaVu9nssYegj44V9lmc3gr2FJ2L/view?usp=sharing"  target="_blank">教材</a><br>
+		<a href = "https://drive.google.com/file/d/1s26QS81coNbo-5-Pf0ZSjBoJcp4gnitn/view?usp=sharing"  target="_blank">Gratic說明</a><br>
+		
+		<a href = "https://drive.google.com/drive/folders/1eto0GW0qcE_Lc4NtCFJ28nCohiQc2DNA?usp=sharing"  target="_blank">拉密</a><br>
+		
+		<a href = "https://drive.google.com/file/d/1N2q3wgdAnXWFepJHT1DyyfaE1mtHuhtc/view?usp=sharing"  target="_blank">Robozzle說明</a><br>
+		<a href = "https://drive.google.com/file/d/1vF6JDDwQn-KsRSEO8_X_8rA8KGrnBMH0/view?usp=sharing"  target="_blank">Robozzle競賽</a><br>
+		<a href = "https://drive.google.com/file/d/10tgxz4bD36zV3Rn5qb06n-LWJ6ofMqRm/view?usp=sharing"  target="_blank">煉金術說明</a><br>
+		
+		<a download="煉金術學習單.pdf" href = "LAW.pdf">煉金術學習單</a><br>
+		<a download="煉金術答案.pdf" href = "LAA.pdf">煉金術答案</a><br>
+		
+		<a href = "test.html">學生測驗結果</a><br>
+		
+	</div>
+	<div class="timeline">
+		<ul>
+			<li id = "week1">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 一 週</h4>
+				</div>
+			</li>
+			
+			<li style = "display: none" id = "week1-1">
+				<div class="content">
+					<h3>課程介紹</h3>
+					<p> 介紹本學期教學目標與教學方法 </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+      
+			<li style = "display: none" id = "week1-2">
+				<div class="content">
+					<h3>運算思維介紹</h3>
+					<p>1. 運算思維簡介</p>
+					<p>2. 運算思維能力</p>
+					<p>3. 運算思維應用</p>
+				<div class="time">
+					<h4>STEP 2</h4>
+				</div>
+			</li>
+      
+			<li style = "display: none" id = "week1-3">
+				<div class="content">
+					<h3>運算思維與遊戲的關聯</h3>
+					<p> 介紹本學期會使用之遊戲 </p>
+				</div>
+				<div class="time">
+					<h4>STEP 3</h4>
+				</div>
+			</li>
+			
+			<li id = "week2">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 二 週</h4>
+				</div>
+			</li>
+      
+			<li style = "display: none" id = "week2-1">
+				<div class="content">
+					<h3>競賽遊戲</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li style = "display: none" id = "week2-2">
+				<div class="content">
+					<h3>後測</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 2</h4>
+				</div>
+			</li>
+      
+			<li style = "display: none" id = "week2-3">
+				<div class="content">
+					<h3>CT教學</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 3</h4>
+				</div>
+			</li>
+			
+			<li id = "week3">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 三 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week3-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li id = "week4">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 四 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week4-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li id = "week5">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 五 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week5-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li id = "week6">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 六 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week6-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li id = "week7">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 七 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week7-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li id = "week8">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 八 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week8-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			<li id = "week9">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 九 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week9-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+			
+			<li id = "week10">
+				<div class="content">
+					<p></p>
+				</div>
+				<div class="centertime">
+					<h4>第 十 週</h4>
+				</div>
+			</li>
+
+			<li style = "display: none" id = "week10-1">
+				<div class="content">
+					<h3>問卷填寫</h3>
+					<p> text </p>
+				</div>
+				<div class="time">
+					<h4>STEP 1</h4>
+				</div>
+			</li>
+			
+      <div style="clear:both;"></div>
+    </ul>
+  </div>
+</body>
+</html>

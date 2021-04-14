@@ -1,0 +1,76 @@
+<html>
+
+<style>
+    body {
+        font-family: Impact, sans-serif;
+        background: #082f43;
+        color: white;
+        padding: 50px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        color: #ffc621;
+    }
+    
+    .data {
+        background: #0093a0;
+        border-radius: 5px;
+        float: left;
+        margin: 10px;
+        width: 20%;
+        padding: 10px;
+        height: 180px;
+        position: relative;
+        overflow: auto;
+    }
+    
+    .dtag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: #f76b61;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <h1>HEADING</h1>
+
+    <div class="results">
+        <!-- data will be inserted here-->
+    </div>
+
+    <h1>BOTTOM</h1>
+
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+
+    <script>
+        var sheetid = '1HXHsgNzZ-XGqSUzliRYE5rLLdLVWoW6y4Q5Q7SfVVGU',
+            sheetno = 1,
+            dataurl = 'https://spreadsheets.google.com/feeds/list/' + sheetid + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
+
+        $.getJSON(dataurl,
+            function(json) {
+                var e = json.feed.entry,
+                    n = e.length;
+
+                $(e).each(function() {
+                    $('.results').append('<div class="data"><h2>' + this.gsx$score.$t + '</h2><h2>' + this.gsx$name.$t + '</h2></div>');
+                });
+
+
+            }
+        );
+    </script>
+
+</body>
+
+</html>

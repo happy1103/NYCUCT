@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+body{
+	padding:0;
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+	background-image:url('background.png'); 
+    background-position: fixed;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+h1{
+  font-size:60px;
+  text-align:center;
+  margin:0;
+}
+.GameTable td {
+	border: none;
+}
+
+.compition td{
+	border-radius:15px;
+	border: 3px solid rgba(56,122,231,0.3);
+}
+
+.tableinside {
+  width: 300px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 15px;
+}
+.tableinside th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center; 
+}
+
+.X{
+	position: fixed;
+	z-index: 110;
+	top : 10px;
+	right: 10px;
+	margin:0;
+	padding:8px 16px;
+	background:rgba(56,122,231,1);
+	color:#fff;
+	border-radius:60px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+	font-size:7px;
+	border: none;
+}
+
+.loginbutton{
+	position: fixed;
+	z-index: 100;
+	top : 10px;
+	right: 10px;
+	margin:0;
+	padding:8px 16px;
+	background:rgba(56,122,231,1);
+	color:#fff;
+	border-radius:18px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+	font-size:11px;
+	border: none;
+}
+.logoutbutton{
+	position: fixed;
+	z-index: 100;
+	top : 10px;
+	right: 10px;
+	margin:0;
+	padding:8px 16px;
+	background:rgba(56,122,231,1);
+	color:#fff;
+	border-radius:18px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+	font-size:11px;
+	border: none;
+}
+
+.loginbox{
+	position: fixed;
+	z-index: 101;
+	top:50%;
+	left: 50%;
+	width : 300px;
+	height : 270px;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	margin:0;
+	padding:8px 16px;
+	background:rgba(255,255,255,1);
+	border-color:rgba(56,122,231,1);
+	border-radius:18px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+}
+.loginboxbutton{
+	margin:0;
+	padding:8px 16px;
+	bottom: 10px;
+	background:rgba(56,122,231,1);
+	color:#fff;
+	border-radius:18px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+	font-size:11px;
+	border: none;
+}
+
+.forteacher{
+	position: fixed;
+	z-index: 100;
+	bottom : 50px;
+	left : 50px;
+	margin:0;
+	padding:8px 16px;
+	background:rgba(56,122,231,1);
+	color:#fff;
+	border-radius:60px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+	font-size:11px;
+	border: none;
+}
+
+.teacheruse{
+	position: fixed;
+	z-index: 102;
+	bottom : 100px;
+	left : 50px;
+	width : 150px;
+	height : 600px;
+	text-align:center;
+	margin:0;
+	padding:8px 16px;
+	background:rgba(255,255,255,1);
+	border-color:rgba(56,122,231,1);
+	border-radius:18px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+}
+
+.GameButton{
+	border: none;
+	text-align:center;
+	margin:0;
+	width : 300px;
+	height : 120px;
+	padding:8px 8px;
+	background:rgba(255,255,255,1);
+	border-color:rgba(56,122,231,1);
+	border-radius:5px;
+	box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.GameButton:hover,
+.GameButton:focus {
+  box-shadow: 0 0 0 3px rgba(56,122,231,0.8);
+  transform: translateY(-0.20em);
+}
+
+.timeline{
+  position:relative;
+  margin:0px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:#c5c5c5;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:rgba(56,122,231,1);
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(56,122,231,0.2);
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:rgba(56,122,231,1);
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(56,122,231,0.2);
+}
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  color:rgba(56,122,231,1);
+  font-weight:600;
+  font-size: 20px;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+
+.timeline ul li .centertime
+{
+  width:200px;
+  height: 25px;
+  position:absolute;
+  top:0px;
+  right:-115px;
+  margin:0;
+  padding:8px 16px;
+  background:rgba(56,122,231,1);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+}
+
+.timeline ul li .centertime h4
+{
+  margin:0;
+  padding:0;
+  font-size:20px;
+  text-align:center;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-110px;
+  margin:0;
+  padding:8px 16px;
+  background:rgba(56,122,231,1);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-110px;
+  margin:0;
+  padding:8px 16px;
+  background:rgba(56,122,231,1);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(56,122,231,0.3);
+}
+@media(max-width:1500px)
+{
+  .timeline{
+    width:100%;
+  }
+  .tableinside {
+	width:100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: 15px;
+  }
+    .GameButton{
+	  width:100%;
+	  font-size: 20px;
+  }
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
+  }
+  .GameButton{
+	  width:100%;
+	  font-size: 15px;
+  }
+  .tableinside {
+	width:100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: 15px;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  
+  .timeline ul li .centertime,
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
