@@ -34,6 +34,7 @@ $(document).ready(function() {
 	$("#week5").click(function () {
 		
 		$("#week5-1").toggle();
+		$("#week5-2").toggle();
 		
 	});
 	
@@ -52,7 +53,7 @@ $(document).ready(function() {
 	$("#week8").click(function () {
 		
 		$("#week8-1").toggle();
-		
+		$("#week8-2").toggle();		
 	});
 	
 	$("#week9").click(function () {
@@ -64,6 +65,8 @@ $(document).ready(function() {
 	$("#week10").click(function () {
 		
 		$("#week10-1").toggle();
+		$("#week10-2").toggle();
+		$("#week10-3").toggle();
 		
 	});
 	
