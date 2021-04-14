@@ -6,3 +6,18 @@ th, td {
   padding: 5px;
   text-align: center;    
 }
+
+.in{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+.Imworking{
+	position: fixed;
+	z-index: 120;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.95;
+}

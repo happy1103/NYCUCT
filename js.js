@@ -510,6 +510,14 @@ function graph(school, name, score)
 
 }
 
+$(document).ready(function() {
+	
+	$("#Imworking").click(function () {
+		
+		$("#Imworking").remove();
+	});
+});
+
 /*
 function graph(school, name, score)
 {
