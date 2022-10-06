@@ -4,7 +4,7 @@ console.log("index.js");
 var UserSheet = '1JrVrVXFeuXNeHioXaB0tr7qeiu1X5FEzdUwiAj8-e3s',
 	sheetno = 1,
 	UserDataurl = 'https://spreadsheets.google.com/feeds/list/' + UserSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
-	UserDataur_v4 = 'https://sheets.googleapis.com/v4/spreadsheets/' + UserSheet + '/values/Sheet1'
+	UserDataur_v4 = 'https://sheets.googleapis.com/v4/spreadsheets/' + UserSheet + '/values/Sheet1';
 
 var Nowlogin = 0;
 var UserName = "";
