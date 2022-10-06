@@ -42,7 +42,7 @@ $(document).ready(function() {
 		/*var script = document.createElement('script');
 		script.async = false; */
 		
-		$.getJSON(UserDataur_v4, function(json) {
+		/*$.getJSON(UserDataur_v4, function(json) {
 			var e = json.feed.entry,
 				n = e.length;
 				
@@ -63,7 +63,21 @@ $(document).ready(function() {
 				loginfalse();
 			}
 			
-		});
+		});*/
+		if(User == 'dcslabCT' && Pass == 'dcslabCT')
+		{
+			Nowlogin = 1;
+			UserName = User;
+			//UserSchool = this.gsx$學校.$t;
+			UserSchool = 'LAB';
+			console.log("Login");
+			logincheck();
+		}
+		if(Nowlogin == 0)
+		{
+			loginfalse();
+		}
+		
 	});
 });
 
