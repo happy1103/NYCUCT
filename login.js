@@ -6,6 +6,7 @@ var UserSheet = '1JrVrVXFeuXNeHioXaB0tr7qeiu1X5FEzdUwiAj8-e3s',
 	UserDataurl = 'https://spreadsheets.google.com/feeds/list/' + UserSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?',
 	UserDataur_v4 = 'https://sheets.googleapis.com/v4/spreadsheets/' + UserSheet + '/values/Sheet1';
 	//https://dannyliu.me/%E7%94%A8-google-sheet-%E4%BD%9C-json-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90%EF%BC%8C%E8%A7%A3%E6%B1%BA-403-%E6%88%96-404-%E9%8C%AF%E8%AA%A4/
+	//https://developers.google.com/sheets/api/guides/migration
 
 var Nowlogin = 0;
 var UserName = "";
