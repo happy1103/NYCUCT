@@ -7,8 +7,8 @@ var PostSheet = '1IxVajJEc67YuHeRCjbjFDYDKtBdLvtwP8FMGQQXsnGU',
 		PostDataurl_v3 = 'https://spreadsheets.google.com/feeds/list/' + PostSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
 		
 var AllStudentJson = [];
-var PerDataurl = "https://sheets.googleapis.com/v4/spreadsheets/1_ahIWTl_xvY9pHYrl2R3BIWvsDsEkbXv-AoGdvyoZS0?key=AIzaSyBKENFbqkcNznSUYYX-NEqrWno4-YHanfo";
-var PostDataurl = "https://sheets.googleapis.com/v4/spreadsheets/1IxVajJEc67YuHeRCjbjFDYDKtBdLvtwP8FMGQQXsnGU?key=AIzaSyBKENFbqkcNznSUYYX-NEqrWno4-YHanfo";
+var PerDataurl = "https://sheets.googleapis.com/v4/spreadsheets/1_ahIWTl_xvY9pHYrl2R3BIWvsDsEkbXv-AoGdvyoZS0?key=<AIzaSyBKENFbqkcNznSUYYX-NEqrWno4-YHanfo>";
+var PostDataurl = "https://sheets.googleapis.com/v4/spreadsheets/1IxVajJEc67YuHeRCjbjFDYDKtBdLvtwP8FMGQQXsnGU?key=<AIzaSyBKENFbqkcNznSUYYX-NEqrWno4-YHanfo>";
 
 var allscore = 0;
 var NumberOfStudents = 0;
