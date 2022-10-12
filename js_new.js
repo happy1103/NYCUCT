@@ -1,13 +1,14 @@
 var PerSheet = '1_ahIWTl_xvY9pHYrl2R3BIWvsDsEkbXv-AoGdvyoZS0',
 		sheetno = 1,
-		PerDataurl = 'https://spreadsheets.google.com/feeds/list/' + PerSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
+		PerDataurl_v3 = 'https://spreadsheets.google.com/feeds/list/' + PerSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
 		
 var PostSheet = '1IxVajJEc67YuHeRCjbjFDYDKtBdLvtwP8FMGQQXsnGU',
 		sheetno = 1,
-		PostDataurl = 'https://spreadsheets.google.com/feeds/list/' + PostSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
+		PostDataurl_v3 = 'https://spreadsheets.google.com/feeds/list/' + PostSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
 		
 var AllStudentJson = [];
-
+var PerDataurl = "pretest.csv";
+var PostDataurl = "posttest.csv";
 
 var allscore = 0;
 var NumberOfStudents = 0;
