@@ -7,8 +7,8 @@ var PostSheet = '1IxVajJEc67YuHeRCjbjFDYDKtBdLvtwP8FMGQQXsnGU',
 		PostDataurl_v3 = 'https://spreadsheets.google.com/feeds/list/' + PostSheet + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
 		
 var AllStudentJson = [];
-var PerDataurl = "pretest.csv";
-var PostDataurl = "posttest.csv";
+var PerDataurl = "Pretest.xlsx";
+var PostDataurl = "Posttest.xlsx";
 
 var allscore = 0;
 var NumberOfStudents = 0;
